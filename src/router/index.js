@@ -1,5 +1,4 @@
-// src/router/index.js
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 // 引入页面组件
 import HomePage from '../pages/HomePage.vue'
@@ -41,8 +40,8 @@ const routes = [
 
 // 创建路由对象
 const router = createRouter({
-  // 使用 hash 模式，确保在 GitHub Pages 上正常工作
-  history: createWebHashHistory(),
+  // 使用 history 模式
+  history: createWebHistory(),
   routes,
   // 路由切换时的滚动行为
   scrollBehavior(to, from, savedPosition) {
